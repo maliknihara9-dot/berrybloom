@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GREENLINE FARMERS</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CURSORS -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+
+  <!-- NAV BAR-->
+  <div class="nav-container">
+    <div class="logo">
+      <img src="../Gallery/Home/img1.png" alt="The Greenline Farmer Logo" width="20%">
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo"><span>GREENLINE</span>FARMERS</div>
+      <ul class="nav-links">
+        <li><a href="../home/index.html?refresh=true">Home</a></li>
+        <li><a href="../about/index.html?refresh=true">About</a></li>
+        <li><a href="../strawberry/index.html?refresh=true">Strawberry</a></li>
+        <li><a href="../goldenberry/index.html?refresh=true">Goldenberry</a></li>
+        <li><a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a></li>
+        <li><a href="../goldenberryproducts/index.html?refresh=true">Goldenberry Products</a></li>
+      </ul>
+
+      <!--MOBILE NAVBAR-->
+      <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-menu">
+          <a href="../home/index.html?refresh=true">Home</a>
+          <a href="../about/index.html?refresh=true">About</a>
+          <a href="../strawberry/index.html?refresh=true?refresh=true">Strawberry</a>
+          <a href="../goldenberry/index.html?refresh=true">Goldenberry</a>
+          <a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a>
+          <a href="../goldenberryproducts/index.html?refresh=true">Goldenberry Products</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- HOME -->
+  <section class="home" id="home">
+    <div class="home-bg" id="homeBg"></div>
+    <div class="home-glow"></div>
+    <div class="home-content">
+      <p class="home-tag">✦ Greenline Farmers · Est. 1995</p>
+      <h1 class="home-title">Fresh From<em>Nature</em></h1>
+      <p class="home-para">
+        Premium organic strawberries and goldenberries, grown with passion and respect for the land. From our farm
+        straight to your table.
+      </p>
+      <div class="home-btn">
+        <a href="#about" class="btn-primary"> Our Story </a>
+        <a href="../about/index.html#visit" class="btn-secondary">Visit Farm</a>
+      </div>
+      <div class="home-scroll">Scroll Down</div>
+  </section>
+
+  <!--FLOATING BERRIES INJUNCTED BY JS-->
+
+  <!-- MARQUEE -->
+  <div class="strip">
+    <div class="strip-track">
+      <span>Greenline Farmers</span><span class="sep">✦</span>
+      <span>Organically Grown</span><span class="sep">✦</span>
+      <span>Hand Harvested</span><span class="sep">✦</span>
+      <span>Farm to Table</span><span class="sep">✦</span>
+      <span>100% Natural</span><span class="sep">✦</span>
+      <span>Est. 1995</span><span class="sep">✦</span>
+      <span>Greenline Farmers</span><span class="sep">✦</span>
+      <span>Organically Grown</span><span class="sep">✦</span>
+      <span>Hand Harvested</span><span class="sep">✦</span>
+      <span>Farm to Table</span><span class="sep">✦</span>
+      <span>100% Natural</span><span class="sep">✦</span>
+      <span>Est. 1995</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num" data-target="1995">0</div>
+      <div class="stat-label">Since</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-target="31">0</div>
+      <div class="stat-label">Years Farming</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-target="2">0</div>
+      <div class="stat-label">Berry Varieties</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-target="100">0</div>
+      <div class="stat-label">% Organic</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="about-img reveal-left">
+      <img src="../Gallery/Home/img3.png" alt="Greenline Farmers" />
+    </div>
+    <div class="about-text">
+      <div class="section">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-title">Greenline<br><em class="title-highlights">Farmers</em></h2>
+        <div class="divider"></div>
+        <p>Greenline Farmers is a passionate berry farm dedicated to growing fresh, natural, and high-quality
+          strawberries and goldenberries. Our farm combines modern farming techniques with traditional care.</p>
+        <p>We deliver the sweetest berries directly from our garden to your table — no chemicals, no shortcuts, just
+          pure nature's goodness. Every fruit is hand-picked at peak ripeness to ensure maximum freshness and flavour.
+        </p>
+        <a href="#products" class="about-btn">View Our Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products-section" id="products">
+    <div class="section">
+      <p class="section-label">Fresh & Natural</p>
+      <h2 class="section-title">Our Products</h2>
+      <div class="divider center"></div>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <img src="../Gallery/Home/img4.jpeg" alt="Strawberries" />
+        </div>
+        <div class="product-card-body">
+          <h3>🍓 Strawberries</h3>
+          <p>Sweet, juicy, and organically grown. Hand-picked daily for maximum freshness.</p>
+          <a href="../strawberry/index.html" class="product-tag">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <img src="../Gallery/Home/img5.jpeg" alt="Goldenberries" />
+        </div>
+        <div class="product-card-body">
+          <h3>🟡 Goldenberries</h3>
+          <p>Nature's hidden jewel. Tangy, golden, and packed with vitamins and antioxidants.</p>
+          <a href="../goldenberry/index.html" class="product-tag">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="product-card reveal">
+        <div class="product-card-img">
+          <img src="../Gallery/Home/img6.jpg" alt="Berry Jam" />
+        </div>
+        <div class="product-card-body">
+          <h3>🥫 Strawberry Jams</h3>
+          <p>Homemade organic jams crafted from our farm-fresh berries. No additives, pure flavour.</p>
+          <a href="../strawberryproducts/index.html#strawberryProduct_5" class=" product-tag">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHYUS-->
+  <section class="why-us-section" id="whyus">
+    <div class="section">
+      <p class="section-label">Why Us</p>
+      <h2 class="section-title" style="color: var(--dark);">Our Promise</h2>
+      <div class="divider center"></div>
+    </div>
+
+    <div class="why-us-grid">
+      <div class="why-us-card reveal">
+        <div class="why-us-icon">🌱</div>
+        <h4>100% Organic</h4>
+        <p>No chemicals, no synthetic fertilisers. We grow with nature, not against it.</p>
+      </div>
+
+      <div class="why-us-card reveal">
+        <div class="why-us-icon">🤲</div>
+        <h4>Hand Harvested</h4>
+        <p>Every berry is carefully hand-picked at peak ripeness by our dedicated team.</p>
+      </div>
+
+      <div class="why-us-card reveal">
+        <div class="why-us-icon">🚚</div>
+        <h4>Farm to Table</h4>
+        <p>Direct delivery from our farm ensures maximum freshness in every bite.</p>
+      </div>
+
+      <div class="why-us-card reveal">
+        <div class="why-us-icon">❤️</div>
+        <h4>Grown with Love</h4>
+        <p>Three decades of passion and dedication in every fruit we grow and deliver.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">Contact Us</h2>
+      <div class="divider center"></div>
+    </div>
+
+    <div class="contact-form reveal">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your full name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="your@email.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell us how we can help…"></textarea>
+      </div>
+
+      <button class="form-submit" onclick="submitForm()">Send Message</button>
+      <div class="form-response" id="formResponse">✓ Thank you! We'll get back to you soon.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">GreenLine<span>Farmer</span></div>
+        <p>Premium organic berries grown with love and deep respect for the land since 1995.</p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a href="../home/index.html?refresh=true">Home</a>
+          <a href="../about/index.html?refresh=true">About</a>
+          <a href="../strawberry/index.html?refresh=true">Strawberry</a>
+          <a href="../goldenberry/index.html?refresh=true">Goldenberry</a>
+          <a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a>
+          <a href="../goldenberryproducts/index.html?refresh=true">Goldenberry Products</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sections</h5>
+          <a href="#about">Who We Are</a>
+          <a href="#products">Our Products</a>
+          <a href="#whyus">Our Promise</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="tel:+94710961522">📞 +94 71 096 1522</a>
+          <a href="mailto:Aravindajayasooriya29@gmail.com">✉ Aravindajayasooriya29@gmail.com</a>
+          <a href="https://maps.app.goo.gl/6QgsVEJBRceTrxjg6?g_st=aw">📍 Nuwara Eliya, Sri Lanka</a>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/18iHX5XpgT/" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@best.strawberry.f?_r=1&_t=ZS-96AZBN1Hv5I" class="social-icon"><i
+                class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/@best_strawberry_production?si=C7iSL0gWD8H1xyNP" class="social-icon"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Greenline Farmers · All Rights Reserved · Grown with ❤️ in Sri Lanka</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

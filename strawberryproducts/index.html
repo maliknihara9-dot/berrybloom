@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GREENLINE FRAMERS</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- CURSOR -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAVBAR -->
+  <div class="nav-container">
+    <div class="logo">
+      <img src="../Gallery/Strawberry_products/img1.png" alt="The Greenline Farmer Logo" width="20%" />
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo"><span>GREENLINE</span>FARMERS</div>
+      <ul class="nav-links">
+        <li><a href="../home/index.html?refresh=true">Home</a></li>
+        <li><a href="../about/index.html?refresh=true">About</a></li>
+        <li><a href="../strawberry/index.html?refresh=true">Strawberry</a></li>
+        <li><a href="../goldenberry/index.html?refresh=true">Goldenberry</a></li>
+        <li> <a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a> </li>
+        <li><a href="../goldenberryproducts/index.html?refresh=true">Goldenberry Products</a>
+        </li>
+      </ul>
+
+      <!--MOBILE NAVBAR-->
+      <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-menu">
+          <a href="../home/index.html?refresh=true">Home</a>
+          <a href="../about/index.html?refresh=true">About</a>
+          <a href="../strawberry/index.html?refresh=true?refresh=true">Strawberry</a>
+          <a href="../goldenberry/index.html?refresh=true">Goldenberry</a>
+          <a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a>
+          <a href="../goldenberryproducts/index.html?refresh=true">Goldenberry Products</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- HOME -->
+  <section class="home" id="home">
+    <div class="home-bg" id="homeBg"></div>
+    <div class="home-glow"></div>
+    <div class="home-content">
+      <p class="home-tag">✦ Greenline Farmers · Est. 1995</p>
+      <h1 class="home-title">
+        Ruby<em>Products</em>
+      </h1>
+      <p class="home-para">
+        Natures sweetest treasure. Sun-ripened strawberries grown in lush
+        fields — juicy, vibrant, and irresistibly fresh.
+      </p>
+      <div class="home-btn">
+        <a href="#strawberryProducts" class="btn-primary">View Products</a>
+        <a href="../strawberry/index.html" class="btn-secondary">Our Story</a>
+      </div>
+    </div>
+    <div class="home-scroll">Scroll Down</div>
+  </section>
+
+  <!--FLOATING BERRIES INJUNCTED BY JS-->
+
+  <!-- MARQUEE -->
+  <div class="strip">
+    <div class="strip-track">
+      <span>Greenline Farmers</span><span class="sep">✦</span>
+      <span>Organically Grown</span><span class="sep">✦</span>
+      <span>Hand Harvested</span><span class="sep">✦</span>
+      <span>Farm to Table</span><span class="sep">✦</span>
+      <span>100% Natural</span><span class="sep">✦</span>
+      <span>Est. 1995</span><span class="sep">✦</span>
+      <span>Greenline Farmers</span><span class="sep">✦</span>
+      <span>Organically Grown</span><span class="sep">✦</span>
+      <span>Hand Harvested</span><span class="sep">✦</span>
+      <span>Farm to Table</span><span class="sep">✦</span>
+      <span>100% Natural</span><span class="sep">✦</span>
+      <span>Est. 1995</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!--PRODUCTS-->
+  <section class="strawberryProducts" id="strawberryProducts">
+
+    <div class="product-grid">
+
+      <!-- PRODUCT_1 -->
+      <div class="product-item" id="strawberryProduct_1">
+        <img src="../Gallery/Strawberry_products/img4.webp" alt="Fresh Steawberries" />
+        <div class="product-label">Fresh Strawberries</div>
+        <div class="hover-overlay">
+          <h3>Strawberries</h3>
+          <p>Rs.500.00 (100g)</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT_2 -->
+      <div class="product-item" id="strawberryProduct_2">
+        <img src="../Gallery/Strawberry_products/img5.jpg" alt="Strawberry Butter" />
+        <div class="product-label">Strawberry Butter</div>
+        <div class="hover-overlay">
+          <h3>Strawberry Butter</h3>
+          <p>Rs.750.00 (100g)</p>
+        </div>
+      </div>
+
+      <!--PRODUCT_3 -->
+      <div class="product-item" id="strawberryProduct_3">
+        <img src="../Gallery/Strawberry_products/img6.jpg" alt="Potted Strawberry Plants" />
+        <div class="product-label">Potted Strawberry Plants</div>
+        <div class="hover-overlay">
+          <h3>Potted Strawberry Plants</h3>
+          <p>Rs.450.00 (1 plant)</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT_4 -->
+      <div class="product-item" id="strawberryProduct_6">
+        <img src="../Gallery/Strawberry_products/img7.jpg" alt="Strawberry Ice Cream" />
+        <div class="product-label">Strawberry Ice Cream</div>
+        <div class="hover-overlay">
+          <h3>Strawberry Ice Cream</h3>
+          <p>Rs.250.00 (100g)</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT_5 -->
+      <div class="product-item" id="strawberryProduct_7">
+        <img src="../Gallery/Strawberry_products/img8.jpg" alt="Strawberry Jam" />
+        <div class="product-label">Strawberry Jam</div>
+        <div class="hover-overlay">
+          <h3>Strawberry Jam</h3>
+          <p>Rs.1200.00 (250g)</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT_6 -->
+      <div class="product-item" id="strawberryProduct_8">
+        <img src="../Gallery/Strawberry_products/img9.webp" alt="Strawberry Milk" />
+        <div class="product-label">Strawberry Milk</div>
+        <div class="hover-overlay">
+          <h3>Strawberry Milkshake</h3>
+          <p>Rs.600.00 (150ml)</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT_7 -->
+      <div class="product-item" id="strawberryProduct_11">
+        <img src="../Gallery/Strawberry_products/img10.jpg" alt="Strawberry Seeds" />
+        <div class="product-label">Strawberry Seeds</div>
+        <div class="hover-overlay">
+          <h3>Strawberry Seeds</h3>
+          <p>Rs.200.00 (100g)</p>
+        </div>
+      </div>
+
+      <!-- PRODUCT_8 -->
+      <div class="product-item" id="strawberryProduct_12">
+        <img src="../Gallery/Strawberry_products/img11.jpg" alt="Strawberry Shortcake" />
+        <div class="product-label">Strawberry Cake</div>
+        <div class="hover-overlay">
+          <h3>Strawberry Cake</h3>
+          <p>Rs.250.00 (100g)</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">GREENLINE<span>FARMERS</span></div>
+        <p>
+          Premium organic berries grown with love and deep respect for the
+          land since 1995.
+        </p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a href="../home/index.html?refresh=true">Home</a>
+          <a href="../about/index.html?refresh=true">About</a>
+          <a href="../strawberry/index.html?refresh=true?refresh=true">Strawberry</a>
+          <a href="../goldenberry/index.html?refresh=true">Goldenberry</a>
+          <a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a>
+          <a href="../goldenberryproducts/index.html?refresh=true">Goldenberry Products</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sections</h5>
+          <a href="#home">Intro</a>
+          <a href="#strawberryProducts">Products</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="tel:+94710961522">📞 +94 71 096 1522</a>
+          <a href="mailto:Aravindajayasooriya29@gmail.com">✉ Aravindajayasooriya29@gmail.com</a>
+          <a href="https://maps.app.goo.gl/6QgsVEJBRceTrxjg6?g_st=aw">📍 Nuwara Eliya, Sri Lanka</a>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/18iHX5XpgT/" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@best.strawberry.f?_r=1&_t=ZS-96AZBN1Hv5I" class="social-icon"><i
+                class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/@best_strawberry_production?si=C7iSL0gWD8H1xyNP" class="social-icon"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        © 2026 Greenline Farmers · All Rights Reserved · Grown with ❤️ in Sri
+        Lanka
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

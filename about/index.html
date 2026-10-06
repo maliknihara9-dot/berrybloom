@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GREENLINE FRAMERSS</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <div class="nav-container">
+    <div class="logo">
+      <img src="../Gallery/About/img1.png" alt="The Greenline Farmer Logo" width="20%">
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo"><span>GREENLINE</span>FARMERS</div>
+      <ul class="nav-links">
+        <li><a href="../home/index.html?refresh=true">Home</a></li>
+        <li><a href="../about/index.html?refresh=true">About</a></li>
+        <li><a href="../strawberry/index.html?refresh=true">Strawberry</a></li>
+        <li><a href="../goldenberry/index.html?refresh=true">Goldenberry</a></li>
+        <li><a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a></li>
+        <li><a href="../goldenberryproducts/index.html?refresh=true">Goldenberry Products</a></li>
+      </ul>
+
+      <!--MOBILE NAVBAR-->
+      <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-menu">
+          <a href="../home/index.html?refresh=true">Home</a>
+          <a href="../about/index.html?refresh=true">About</a>
+          <a href="../strawberry/index.html?refresh=true">Strawberry</a>
+          <a href="../goldenberry/index.html?refresh=true">Goldenberry</a>
+          <a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a>
+          <a href="../goldenberryproducts/index.html?refresh=true">Goldenberry Products</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- HOME-->
+  <section class="home" id="home">
+    <div class="home-bg" id="homeBg"></div>
+
+    <div class="home-glow"></div>
+    <div class="home-content">
+      <p class="home-tag">✦ Greenline Farmers · Est. 1995</p>
+      <h1 class="home-title">About <em>Us</em></h1>
+      <p class="home-para">Visit our Farm spend time and learn our story of love for the land.
+      </p>
+    </div>
+    <div class="home-btn">
+      <a href="#visit" class="btn-primary"> Farm Visit</a>
+      <a href="#about" class="btn-secondary">Our Story</a>
+    </div>
+    <div class="home-scroll">Scroll Down</div>
+  </section>
+
+  <!--FLOATING BERRIES INJUNCTED BY JS-->
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num" data-target="1995">0</div>
+      <div class="stat-label">Since</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-target="31">0</div>
+      <div class="stat-label">Years Farming</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-target="2">0</div>
+      <div class="stat-label">Berry Varieties</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-target="100">0</div>
+      <div class="stat-label">% Organic</div>
+    </div>
+  </div>
+
+
+  <!-- WHO WE ARE -->
+  <section class="about-main" id="about">
+    <div class="about-img reveal-left">
+      <img src="../Gallery/About/img3.png" alt="Our farm" />
+    </div>
+
+    <div class="about-text-block">
+      <div class="reveal">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">Who We Are</h2>
+        <div class="divider"></div>
+        <p>Welcome to <strong style="color:var(--green);">Greenline Farmers</strong>, your trusted source for delicious,
+          hand-picked strawberries and goldenberries. We are passionate about delivering fresh, healthy, and
+          high-quality fruits to our customers with love and care.</p>
+        <p>Founded in 1995, we have spent three decades perfecting our growing methods — combining modern sustainable
+          farming with traditional care to produce berries of exceptional quality.</p>
+        <h3>Our Mission</h3>
+        <p>To provide farm-fresh berries while maintaining the highest standards of quality, hygiene, and customer
+          satisfaction — while preserving the environment for future generations.</p>
+        <h3>Why Choose Us</h3>
+        <ul class="about-list">
+          <li>Fresh and organic strawberries & goldenberries</li>
+          <li>Zero chemicals — grown with nature</li>
+          <li>Hand-picked at peak ripeness daily</li>
+          <li>Direct farm-to-table delivery</li>
+          <li>Customer-first service since 1995</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION STRIP -->
+  <div class="mission-strip reveal" id="mission">
+    <h2>"Fresh from nature, grown with love."</h2>
+    <p>Every berry we grow is a promise — to our customers, to the land, and to the future of sustainable farming.</p>
+  </div>
+
+  <!-- VISIT -->
+  <section class="visit-section" id="visit">
+    <div class="visit-bg"></div>
+
+    <div class="visit-content">
+      <p class="section-label">Come See Us</p>
+      <h2>Visit Our Farm</h2>
+      <p>
+        Come and pick your own strawberries directly from our sun-kissed fields.
+        Bring the family — it's an experience to remember.
+      </p>
+      <div class="visit-hours">
+        🕗 Open Daily · 8:00 AM – 6:00 PM
+      </div>
+      <br>
+      <button class="btn-visit" onclick="openBooking()">
+        🗓️ Book a Visit
+      </button>
+      <br><br><br>
+      <button href="tel:+94000000000" class="btn-visit">📞 Call for Book
+      </button>
+    </div>
+  </section>
+
+  <!-- BOOKING MODAL -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-box">
+      <span class="close-btn" onclick="closeBooking()">&times;</span>
+
+      <form class="booking-form" id="bookingForm">
+        <h1>Book Your Visit</h1>
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <label>Select Date</label>
+        <input type="date" required>
+        <label>Select Time</label>
+        <div class="time-range">
+          <input type="time" id="startTime" placeholder="00:00 AM/PM" required>
+          <br><br>
+          <input type="time" id="endTime" placeholder="00:00 AM/PM" required>
+        </div>
+        <small class="time-note">Allowed: 8:00 AM - 6:00 PM</small>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- BOOKING SUCCESS ALERT -->
+  <div class="booking-alert-modal" id="bookingAlertModal">
+    <div class="booking-alert-box">
+      <button class="alert-close" onclick="closeBookingAlert()">&times;</button>
+
+      <div class="booking-alert-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f2c94c" stroke-width="2.2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+
+      <h3>Booking Confirmed!</h3>
+      <p class="alert-sub">We can't wait to see you</p>
+      <hr class="booking-alert-divider">
+
+      <div class="booking-alert-details">
+        <div class="booking-alert-row">
+          <span class="row-label">Name</span>
+          <span class="row-value" id="ba-name"></span>
+        </div>
+
+        <div class="booking-alert-row">
+          <span class="row-label">Email</span>
+          <span class="row-value" id="ba-email"></span>
+        </div>
+
+        <div class="booking-alert-row">
+          <span class="row-label">Phone</span>
+          <span class="row-value" id="ba-phone"></span>
+        </div>
+
+        <div class="booking-alert-row">
+          <span class="row-label">Date</span>
+          <span class="row-value" id="ba-date"></span>
+        </div>
+
+        <div class="booking-alert-row">
+          <span class="row-label">Time</span>
+          <span class="row-value" id="ba-time"></span>
+        </div>
+      </div>
+
+      <hr class="booking-alert-divider">
+      <p class="booking-alert-quote">
+        "Come and experience the joy with us — picking, tasting, and truly being in the moment together."
+      </p>
+      <button class="booking-alert-btn" onclick="closeBookingAlert()">Done</button>
+    </div>
+  </div>
+
+  <!-- INFO CARDS -->
+  <section class="cards-section" id="card">
+    <div class="reveal">
+      <p class="section-label">Our Values</p>
+      <h2 class="section-title" style="color:#0f2410;">What Drives Us</h2>
+      <div class="divider center"></div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="info-card reveal">
+        <div class="info-card-icon">🌱</div>
+        <h3>Sustainability</h3>
+        <p>We farm in harmony with nature using eco-friendly methods that protect our soil, water, and ecosystems.</p>
+      </div>
+
+      <div class="info-card reveal">
+        <div class="info-card-icon">🍓</div>
+        <h3>Freshness</h3>
+        <p>We harvest daily and deliver directly, ensuring every berry reaches you at peak ripeness and flavour.</p>
+      </div>
+
+      <div class="info-card reveal">
+        <div class="info-card-icon">🏆</div>
+        <h3>Quality</h3>
+        <p>Every product is inspected carefully before it leaves our farm. No compromises on quality.</p>
+      </div>
+
+      <div class="info-card reveal">
+        <div class="info-card-icon">🤝</div>
+        <h3>Trust</h3>
+        <p>We build long-term relationships with our customers through consistent quality and honest service.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">GreenLine<span>Farmer</span></div>
+        <p>Premium organic berries grown with love and deep respect for the land since 1995.</p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a href="../home/index.html?refresh=true">Home</a>
+          <a href="../about/index.html?refresh=true">About</a>
+          <a href="../strawberry/index.html?refresh=true">Strawberry</a>
+          <a href="../goldenberry/index.html?refresh=true">Goldenberry</a>
+          <a href="../strawberryproducts/index.html?refresh=true">Strawberry Products</a>
+          <a href="../goldenberryproducts/index.html23?refresh=true">Goldenberry Products</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sections</h5>
+          <a href="#about">About us</a>
+          <a href="#mission">Mission</a>
+          <a href="#visit">Visit</a>
+          <a href="#card">Info</a>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="tel:+94710961522">📞 +94 71 096 1522</a>
+          <a href="mailto:Aravindajayasooriya29@gmail.com">✉ Aravindajayasooriya29@gmail.com</a>
+          <a href="https://maps.app.goo.gl/6QgsVEJBRceTrxjg6?g_st=aw">📍 Nuwara Eliya, Sri Lanka</a>
+
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/18iHX5XpgT/" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@best.strawberry.f?_r=1&_t=ZS-96AZBN1Hv5I" class="social-icon"><i
+                class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com/@best_strawberry_production?si=C7iSL0gWD8H1xyNP" class="social-icon"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Greenline Farmers · All Rights Reserved · Grown with ❤️ in Sri Lanka</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
